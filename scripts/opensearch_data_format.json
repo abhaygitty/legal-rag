@@ -1,0 +1,51 @@
+{
+    "legal_chunks": {
+        "aliases": {},
+        "mappings": {
+            "properties": {
+                "section": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "source": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "text": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                }
+            }
+        },
+        "settings": {
+            "index": {
+                "replication": {
+                    "type": "DOCUMENT"
+                },
+                "number_of_shards": "1",
+                "provided_name": "legal_chunks",
+                "creation_date": "1771579218804",
+                "number_of_replicas": "1",
+                "uuid": "hlws1KP-TyCnKVpZ-8AiiQ",
+                "version": {
+                    "created": "136327827"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+CREATE ROLE legal WITH LOGIN PASSWORD 'legal' SUPERUSER CREATEDB CREATEROLE;
+
+CREATE DATABASE legal_rag OWNER legal;
+
+\connect legal_rag
+
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE IF NOT EXISTS legal_chunks (
+  id SERIAL PRIMARY KEY,
+  text TEXT,
+  embedding VECTOR(1024),
+  section TEXT,
+  source TEXT
+);

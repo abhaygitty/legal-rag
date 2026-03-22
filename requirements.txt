@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+psycopg2-binary
+sentence-transformers
+opensearch-py
+numpy
+pydantic
+python-dotenv
+rank-bm25
